@@ -21,3 +21,7 @@ repositories {
 dependencies {
     implementation 'de.jensd:fontawesomefx-materialdesignfont:2.0.26-9.1.2'
 }
+
+compileJava {
+    options.encoding = "UTF-8"
+}
