@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+}
+
+javafx {
+    version = "16"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+mainClassName = "Launcher_test/ca.rekabit.launcher.Main"
+
+group 'ca.rekabit.launcher'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'de.jensd:fontawesomefx-materialdesignfont:2.0.26-9.1.2'
+    implementation group: 'com.google.code.gson', name: 'gson', version: '2.8.9'
+    implementation 'fr.flowarg:flowupdater:1.5.2'
+}
+
+compileJava {
+    options.encoding = "UTF-8"
+}
